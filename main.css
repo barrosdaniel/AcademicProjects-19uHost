@@ -104,3 +104,75 @@ h1 {
   width: 30%;
   vertical-align: middle;
 }
+
+.plan--highlighted {
+  background-color: #19b84c;
+  color: #f4f4f4;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.plan--highlighted .plan__title {
+  color: #f4f4f4;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan__annotation {
+  background: #f4f4f4;
+  color: #19b84c;
+  width: 75%;
+  margin: 16px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.plan__title {
+  color: #0e4f1f;
+  font-size: 24px;
+}
+
+.plan__price {
+  color: #888;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+}
+
+.plan__feature {
+  margin: 10px 0;
+}
+
+.button {
+  background-color: #0e4f1f;
+  color: #f4f4f4;
+  font: inherit;
+  border: 0;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover,
+.button:active {
+  border: 2px solid #0e4f1f;
+  background-color: #fafafa;
+  color: #0e4f1f;
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button:focus {
+  outline: none;
+}
