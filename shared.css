@@ -12,6 +12,7 @@ body {
 /* Header //////////////////////////////////////////////*/
 .main-header {
   width: 100%;
+  position: fixed;
   background-color: #2ddf5c;
   padding: 8px 16px;
 }
