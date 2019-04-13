@@ -13,8 +13,11 @@ body {
 .main-header {
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #2ddf5c;
   padding: 8px 16px;
+  z-index: 10;
 }
 
 .main-header>div {
@@ -83,6 +86,7 @@ body {
 
 
 
+/* Button /////////////////////////////////////////////////*/
 .button {
   background-color: #0e4f1f;
   color: #f4f4f4;
