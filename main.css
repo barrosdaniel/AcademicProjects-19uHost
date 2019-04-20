@@ -146,3 +146,15 @@ h1 {
   font-size: 20px;
   font-weight: bold;
 }
+
+.icon {
+  color: #f4f4f4;
+  display: block;
+  text-align: center;
+  margin: 16px auto;
+  width: 32px;
+  height: 32px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
