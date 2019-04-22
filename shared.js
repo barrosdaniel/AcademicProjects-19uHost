@@ -13,8 +13,12 @@ for (i = 0; i < planButtons.length; i++) {
   planButtons[i].addEventListener('click', openModal);
 }
 // Modal Buttons
-modalNoButton.addEventListener('click', closeModal);
-modalYesButton.addEventListener('click', closeModal);
+if (modalNoButton) {
+  modalNoButton.addEventListener('click', closeModal);
+}
+if (modalYesButton) {
+  modalYesButton.addEventListener('click', closeModal);
+}
 // Backdrop
 backdrop.addEventListener('click', closeModal);
 
@@ -38,7 +42,9 @@ function closeModal(e) {
   e.preventDefault();
 
   backdrop.classList.remove('open');
-  modal.classList.remove('open');
+  if (modal) {
+    modal.classList.remove('open');
+  }
   mobileNav.classList.remove('open');
 }
 

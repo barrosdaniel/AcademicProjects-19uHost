@@ -22,6 +22,10 @@ main {
   transition: 0.2s;
 }
 
+.package:first-child {
+  margin-top: 4rem;
+}
+
 .package:hover,
 .package:active,
 #free:hover,
