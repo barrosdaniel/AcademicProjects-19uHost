@@ -23,6 +23,10 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.open {
+  display: block !important;
+}
+
 /* Header //////////////////////////////////////////////*/
 .main-header {
   width: 100%;

@@ -1,3 +1,4 @@
+// CHOOSE PLAN BUTTON MODAL
 // Selectors
 const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
@@ -14,17 +15,45 @@ for (i = 0; i < planButtons.length; i++) {
 // Modal Buttons
 modalNoButton.addEventListener('click', closeModal);
 modalYesButton.addEventListener('click', closeModal);
+// Backdrop
+backdrop.addEventListener('click', closeModal);
 
 // Actions
 function openModal() {
-  backdrop.style.display = 'block';
-  modal.style.display = 'block';
+  // Using display inline styles
+  // backdrop.style.display = 'block';
+  // modal.style.display = 'block';
+
+  // Overwriting className property - !It replaces all other classes already the element already has. Not recommended
+  // backdrop.className = 'open';
+  // modal.className = 'open';
+
+  // Adding new classes
+  backdrop.classList.add('open');
+  modal.classList.add('open');
 };
 
 function closeModal(e) {
   // Temp
   e.preventDefault();
 
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
+  mobileNav.classList.remove('open');
 }
+
+
+
+// CHOOSE PLAN BUTTON MODAL
+// Selectors
+const navToggleButton = document.querySelector('.toggle-button');
+const mobileNav = document.querySelector('.mobile-nav');
+
+// Event Listeners
+navToggleButton.addEventListener('click', toggleNavBarVisibility);
+
+// Actions
+function toggleNavBarVisibility() {
+  mobileNav.classList.add('open');
+  backdrop.classList.add('open');
+};
