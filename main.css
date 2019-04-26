@@ -6,9 +6,9 @@
 
 
 
-/* Hero Image //////////////////////////////////////////////*/
+/* Overview //////////////////////////////////////////////*/
 #product-overview {
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url('images/freedom.jpg') left 10% bottom 60% / cover border-box no-repeat, #ff1b68;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url('images/freedom.jpg') center / cover border-box no-repeat, #ff1b68;
   /* The shorthand property above includes the whole lot of properties below */
   /* background-image: url('freedom.jpg'); */
   /* background-position: left 10% bottom 20%;
@@ -34,33 +34,31 @@
   bottom: 6%;
 }
 
-h1 {
-  font-family: sans-serif;
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
 
 
 
 /* Plans Section //////////////////////////////////////////////*/
-.plan_list {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-
 .plan {
   background-color: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: .5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: .5rem 0;
+  width: 100%;
 }
 
 .plan--highlighted {
   background-color: #19b84c;
   color: #f4f4f4;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .plan--highlighted .plan__title {
@@ -97,6 +95,25 @@ h1 {
 
 .plan__feature {
   margin: 0.6rem 0;
+}
+
+@media screen and (min-width: 40rem) {
+  .plan_list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 17.5rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 
