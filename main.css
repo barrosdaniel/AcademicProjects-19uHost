@@ -21,7 +21,7 @@
   /* background-image: radial-gradient(ellipse farthest-side at 20% 50%, red, blue, green); */
   width: 100vw;
   height: 33.3vh;
-  margin-top: 2.58rem;
+  margin-top: 4rem;
   position: relative;
 }
 
@@ -34,7 +34,7 @@
   bottom: 6%;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 40rem) and (min-height: 60rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -145,7 +145,6 @@
   width: 100%;
   margin: 0.5rem 0;
   padding: 1rem;
-  border-radius: 5px;
   text-align: center;
 }
 
