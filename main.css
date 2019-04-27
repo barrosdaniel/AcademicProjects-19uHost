@@ -34,7 +34,7 @@
   bottom: 6%;
 }
 
-@media (min-width: 40rem) {
+@media screen and (min-width: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -48,6 +48,10 @@
 
 
 /* Plans Section //////////////////////////////////////////////*/
+#plans {
+  padding: 2rem 0;
+}
+
 .plan {
   background-color: #d5ffdc;
   text-align: center;
@@ -109,6 +113,7 @@
     vertical-align: middle;
     min-width: 17.5rem;
     max-width: 25rem;
+    margin: .5rem 1rem;
   }
 
   .plan--highlighted {
@@ -121,30 +126,27 @@
 /* Key Features Section ///////////////////////////////////////*/
 #key-features {
   background: #ff1b68;
-  margin-top: 5rem;
-  padding: 1rem;
+  padding: 2rem 0;
 }
 
 #key-features .section-title {
   color: #f4f4f4;
-  margin: 2rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .key-features__features {
   list-style: none;
+  padding: 0;
 }
 
 .key-features__feature {
   background-color: #81002c;
   color: #f4f4f4;
-  display: inline-block;
-  width: 30%;
-  margin: 1.5%;
+  width: 100%;
+  margin: 0.5rem 0;
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-  vertical-align: top;
 }
 
 .key-features__image {
@@ -173,6 +175,27 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+@media screen and (min-width: 40rem) {
+  #key-features {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #key-features .section-title {
+    margin-top: 2rem;
+  }
+
+  .key-features__feature {
+    display: inline-block;
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+    margin: 0.5rem 1rem;
+    vertical-align: top;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* Modal //////////////////////////////////////////////////////*/
