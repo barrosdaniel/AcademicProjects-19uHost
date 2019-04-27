@@ -1,5 +1,6 @@
 main {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .background {
@@ -20,10 +21,7 @@ main {
   border-left: none;
   position: relative;
   transition: 0.2s;
-}
-
-.package:first-child {
-  margin-top: 4rem;
+  opacity: 0.95;
 }
 
 .package:hover,
@@ -95,4 +93,25 @@ main {
 
 #premium .package__subtitle {
   color: #bbb;
+}
+
+@media screen and (min-width: 40rem) {
+
+  main {
+    max-width: 93.75rem;
+    margin: 4rem auto 2rem auto;
+  }
+
+}
+
+@media screen and (min-width: 93.75rem) {
+
+  .package {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
 }
