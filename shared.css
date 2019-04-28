@@ -73,18 +73,17 @@ h1 {
 .main-header__brand {
   height: 1.3rem;
   vertical-align: middle;
-  margin-top: -1.25rem;
 
   /* Alt Text */
   color: #0e4f1f;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.3rem;
+  height: 2.5rem;
   display: inline-block;
 }
 
 .main-header__brand-icon {
-  height: 2.5rem;
+  height: 100%;
   vertical-align: middle;
 }
 
@@ -193,7 +192,7 @@ h1 {
   }
 
   .main-header__brand {
-    margin-top: -1.5rem;
+    margin-top: -0.2rem;
   }
 
 }

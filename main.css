@@ -34,7 +34,7 @@
   bottom: 6%;
 }
 
-@media screen and (min-width: 40rem) and (min-height: 60rem) {
+@media screen and (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
