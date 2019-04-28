@@ -21,8 +21,8 @@
   /* background-image: radial-gradient(ellipse farthest-side at 20% 50%, red, blue, green); */
   width: 100vw;
   height: 33.3vh;
-  margin-top: 4rem;
   position: relative;
+  margin-top: -2rem;
 }
 
 #product-overview h1 {

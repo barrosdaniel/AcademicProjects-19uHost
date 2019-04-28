@@ -31,6 +31,12 @@ h1 {
   display: block !important;
 }
 
+main {
+  min-height: calc(100vh - 4rem - 5.1875rem);
+  margin: 4rem auto 0 auto;
+  padding: 2rem 0;
+}
+
 /* Header //////////////////////////////////////////////*/
 .main-header {
   width: 100%;
