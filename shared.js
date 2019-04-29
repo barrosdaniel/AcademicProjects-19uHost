@@ -38,9 +38,6 @@ function openModal() {
 };
 
 function closeModal(e) {
-  // Temp
-  e.preventDefault();
-
   backdrop.classList.remove('open');
   if (modal) {
     modal.classList.remove('open');
