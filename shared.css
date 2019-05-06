@@ -257,12 +257,14 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -282,8 +284,12 @@ main {
     padding: 2rem;
   }
 
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
   }
 
