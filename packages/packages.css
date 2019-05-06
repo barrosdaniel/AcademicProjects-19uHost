@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('ubuntuMono-Regular.woff2') format("woff2"),
+    url('ubuntuMono-Regular.woff') format("woff"),
+    url('ubuntuMono-Regular.ttf') format("truetype");
+  /* Has to start with regular letter - IE incompatibility with capitals */
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('ubuntuMono-Bold.ttf');
+  font-weight: 700;
+  /* Essential to differentiate styles */
+}
+
 .background {
   background: url('../images/plans-background.jpg');
   filter: grayscale(75%) blur(1px) opacity(60%);
@@ -58,9 +74,19 @@
 .package__info {
   padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 1.25rem;
   color: #0e4f1f;
   background-color: #fafafa;
+  font-size: 1.25rem;
+  /* font: italic small-caps 700 1.25rem/2 'Ubuntu Mono', sans-serif; */
+  /* font: font-style font-variant font-weight font-size/line-height font-family */
+  /* font-style: italic; */
+  /* font-variant: small-caps; */
+  /* font-weight: 700; */
+  /* font-size: 1.25rem; */
+  /* line-height: 2; */
+  /* font-family: 'Ubuntu Mono', sans-serif; */
+  /* text-decoration: underline wavy red; */
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .clearfix {
@@ -76,6 +102,7 @@
   float: right;
   border-right: none;
   border-left: 4px solid #0e4f1f;
+  text-align: right;
 }
 
 #premium {
