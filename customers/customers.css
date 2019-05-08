@@ -65,11 +65,13 @@
   .testimonial {
     margin: 3rem auto;
     max-width: 93.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around
   }
 
   .testimonial__image-container {
-    display: inline-block;
-    vertical-align: middle;
     width: 65%;
   }
 
